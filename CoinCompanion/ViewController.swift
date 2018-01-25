@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             case "√":
                 display1Value = sqrt(display1Value)
             case "GO":
-                display1Value = display1Value*Double(getTheNumber())
+                display1Value = display1Value*Double(getTheNumber())!
             default:
                 break
             }
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
     
 
 }
-func getTheNumber() -> Int {
+func getTheNumber() -> String {
 
 let test = "bitcoin"
 
@@ -87,14 +87,14 @@ func getInfo() -> String { //method returns string of page source
 
 let text = getInfo() //assigns page source to variable
 
-func shortenPageSource() -> Substring {
+func shortenPageSource() -> String {
     // print(text.count) //print length of page source
     //shorten page source
     let start = text.index(text.startIndex, offsetBy: 60000)
     let end = text.index(text.endIndex, offsetBy: -12000)
     let range = start..<end
     let shorter = text[range]
-    return shorter
+    return String(shorter)
 }
 
 
@@ -118,16 +118,16 @@ func findCoin() -> Int {
 }
 
 
-func shortenAgain() -> Substring {
+func shortenAgain() -> String {
     let start = text.index(text.startIndex, offsetBy: 60000+findCoin())
     let end = text.index(text.endIndex, offsetBy: -12000)
     let range = start..<end
     let shorter = text[range]
-    return shorter
+    return String(shorter)
 }
 
 // Loop through parent string looing for the first character of the substring
-func findValue() -> Substring {
+func findValue() -> String {
     var index = 0
     let goal = "#markets"
     let shortSource = shortenAgain()
@@ -154,9 +154,9 @@ func findValue() -> Substring {
     let end = shortSource.index(shortSource.startIndex, offsetBy: index+34+7)
     let range = start..<end
     let string1 = shortSource[range]
-    return(string1)
+    return(String(string1))
 }
-    return(Int(String(findValue())))!
+    return(findValue())
 }
 
 
