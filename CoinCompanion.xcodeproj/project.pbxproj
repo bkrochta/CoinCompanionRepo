@@ -14,7 +14,6 @@
 		F60871B22014E3AB00D6A47E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60871B02014E3AB00D6A47E /* LaunchScreen.storyboard */; };
 		F60871BD2014E3AB00D6A47E /* CoinCompanionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60871BC2014E3AB00D6A47E /* CoinCompanionTests.swift */; };
 		F60871C82014E3AB00D6A47E /* CoinCompanionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60871C72014E3AB00D6A47E /* CoinCompanionUITests.swift */; };
-		F632133B2015957D00DC0435 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F632133A2015957D00DC0435 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		F60871C32014E3AB00D6A47E /* CoinCompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinCompanionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60871C72014E3AB00D6A47E /* CoinCompanionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCompanionUITests.swift; sourceTree = "<group>"; };
 		F60871C92014E3AB00D6A47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F632133A2015957D00DC0435 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +77,6 @@
 		F608719B2014E3AA00D6A47E = {
 			isa = PBXGroup;
 			children = (
-				F632133A2015957D00DC0435 /* Default-568h@2x.png */,
 				F60871A62014E3AA00D6A47E /* CoinCompanion */,
 				F60871BB2014E3AB00D6A47E /* CoinCompanionTests */,
 				F60871C62014E3AB00D6A47E /* CoinCompanionUITests */,
@@ -103,6 +100,10 @@
 				F63213392015852600DC0435 /* AuxilaryFiles */,
 				F60871A92014E3AB00D6A47E /* ViewController.swift */,
 				F60871AB2014E3AB00D6A47E /* Main.storyboard */,
+				F60871A72014E3AB00D6A47E /* AppDelegate.swift */,
+				F60871AE2014E3AB00D6A47E /* Assets.xcassets */,
+				F60871B02014E3AB00D6A47E /* LaunchScreen.storyboard */,
+				F60871B32014E3AB00D6A47E /* Info.plist */,
 			);
 			path = CoinCompanion;
 			sourceTree = "<group>";
@@ -128,10 +129,6 @@
 		F63213392015852600DC0435 /* AuxilaryFiles */ = {
 			isa = PBXGroup;
 			children = (
-				F60871A72014E3AB00D6A47E /* AppDelegate.swift */,
-				F60871AE2014E3AB00D6A47E /* Assets.xcassets */,
-				F60871B02014E3AB00D6A47E /* LaunchScreen.storyboard */,
-				F60871B32014E3AB00D6A47E /* Info.plist */,
 			);
 			path = AuxilaryFiles;
 			sourceTree = "<group>";
@@ -244,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F60871B22014E3AB00D6A47E /* LaunchScreen.storyboard in Resources */,
-				F632133B2015957D00DC0435 /* Default-568h@2x.png in Resources */,
 				F60871AF2014E3AB00D6A47E /* Assets.xcassets in Resources */,
 				F60871AD2014E3AB00D6A47E /* Main.storyboard in Resources */,
 			);
@@ -438,12 +434,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3F6A3D59HX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoinCompanion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TPdevs.CoinCompanion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -453,12 +451,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3F6A3D59HX;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CoinCompanion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TPdevs.CoinCompanion;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
